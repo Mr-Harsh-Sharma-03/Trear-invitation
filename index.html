@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trear Invitation ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Page 1 -->
+    <div class="card" id="page1">
+        <h1>❤️ Will you give me a treat?</h1>
+
+        <button class="yes-btn" onclick="showPage2()">
+            Yes ❤️
+        </button>
+
+        <button class="no-btn" id="noBtn">
+            No 😢
+        </button>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="card hidden" id="page2">
+        <h1>📅 Pick a Date</h1>
+
+        <input type="date" id="date">
+
+        <button class="next-btn" onclick="showPage3()">
+            Next →
+        </button>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="card hidden" id="page3">
+
+        <h1>✨ What are we feeling?</h1>
+
+        <button class="mood-btn" onclick="submitResponse('Excited 🥰')">
+            🥰 Excited
+        </button>
+
+        <button class="mood-btn" onclick="submitResponse('Happy 😊')">
+            😊 Happy
+        </button>
+
+        <button class="mood-btn" onclick="submitResponse('In Love ❤️')">
+            ❤️ In Love
+        </button>
+
+        <button class="mood-btn" onclick="submitResponse('Nervous 😳')">
+            😳 Nervous
+        </button>
+
+    </div>
+
+    <!-- Page 4 -->
+    <div class="card hidden" id="page4">
+
+        <h1>💌</h1>
+
+        <h2>Glad you didn't say no ❤️</h2>
+
+        <p>
+            Be ready by 6, I'm coming to get you ✨
+        </p>
+
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
