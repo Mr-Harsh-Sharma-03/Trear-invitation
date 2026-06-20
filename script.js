@@ -1,5 +1,4 @@
 // ===== Supabase Configuration =====
-alert("Script Loaded Successfully");
 const supabaseUrl = "https://rfivoxtltkkxhqhloznt.supabase.co";
 const supabaseKey = "sb_publishable_gRhccXkSibqx9A6T5uAUSA_xPfw-EsL";
 
